@@ -1,0 +1,22 @@
+[package]
+name = "crust-os"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+
+[workspace]
+members = ["kernel"]
+default-members = ["."]
+resolver = "3"
+
+[dependencies]
+
+[build-dependencies]
+bootloader = "0.11.17"
+crust-os-kernel = { path = "kernel", artifact = "bin", target = "x86_64-unknown-none" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

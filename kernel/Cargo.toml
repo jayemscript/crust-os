@@ -1,0 +1,13 @@
+[package]
+name = "crust-os-kernel"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "crust-os-kernel"
+path = "src/main.rs"
+test = false
+bench = false
+
+[dependencies]
+bootloader_api = "0.11.17"
