@@ -1,0 +1,30 @@
+# Never create or commit package-manager stores.
+.pnpm-store/
+**/.pnpm-store/
+
+# Future Rust/build artifacts
+/target/
+**/target/
+*.rlib
+*.rmeta
+*.o
+*.a
+*.elf
+*.bin
+*.iso
+*.img
+*.qcow2
+
+# Debugging, logs, editor and temporary files
+*.log
+*.dmp
+*.core
+core
+.gdb_history
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
